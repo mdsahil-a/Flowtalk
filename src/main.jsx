@@ -12,10 +12,11 @@ const queryClient = new QueryClient();
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/Flowtalk">
       <QueryClientProvider client={queryClient}>
         <App />
       </QueryClientProvider>
     </BrowserRouter>
   </StrictMode>
 );
+
