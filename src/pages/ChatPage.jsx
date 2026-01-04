@@ -102,7 +102,7 @@ const ChatPage = () => {
             <CallButton handleVideoCall={handleVideoCall} />
             <Window>
               <ChannelHeader />
-              <MessageList />
+              <MessageList messageActions={['delete', 'reply']} />
               <MessageInput focus />
             </Window>
           </div>

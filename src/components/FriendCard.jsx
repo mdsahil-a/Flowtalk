@@ -16,12 +16,12 @@ const FriendCard = ({ friend }) => {
         <div className="flex flex-wrap gap-1.5 mb-3">
           <span className="badge badge-secondary text-xs">
             {getLanguageFlag(friend.nativeLanguage)}
-            Native: {friend.nativeLanguage}
+            {/* Native: {friend.nativeLanguage} */}
           </span>
-          <span className="badge badge-outline text-xs">
+          {/* <span className="badge badge-outline text-xs">
             {getLanguageFlag(friend.learningLanguage)}
             Learning: {friend.learningLanguage}
-          </span>
+          </span> */}
         </div>
 
         <Link to={`/chat/${friend._id}`} className="btn btn-outline w-full">
